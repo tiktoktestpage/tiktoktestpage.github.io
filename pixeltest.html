@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  Click Button to Test AddToCart Button </br>
+  Click to Test AddToCart Button </br> </br>
 <button id="addToCartButton">CompletePayment</button>
 <script type="text/javascript">
 document.getElementById("addToCartButton").onclick = function(){
@@ -27,6 +27,20 @@ document.getElementById("addToCartButton").onclick = function(){
     currency: 'USD',})
  }
 </script>
+<hr>
+  Click to Test Custom SteamClick Button </br> </br>
+<button id="addToCartButton">SteamClick</button>
+<script type="text/javascript">
+document.getElementById("addToCartButton").onclick = function(){
+    ttq.track('SteamClick',{  
+    content_id: '301',
+    quantity: 1,
+    price: 8,
+    value: 9.2,
+    currency: 'USD',})
+ }
+</script>
+
 </body>
 
 </html>
