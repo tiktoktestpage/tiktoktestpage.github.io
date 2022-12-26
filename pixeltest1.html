@@ -42,16 +42,21 @@ document.getElementById("lp-pom-button-418").onclick = function(){
 <hr>
   Click to Test Custom SteamClick A HREF ELEMENT </br> </br>
 <script type="text/javascript">
-document.querySelector("#lp-pom-button-419").onclick = function(){
+
+  document.getElementById("lp-pom-button-419").addEventListener('click',function ()
+{
+    function(){
     ttq.track('SteamClickMobile',{  
     quantity: 1,
-    value: 9.2,
-    currency: 'USD',})
- }
+    value: 5,
+    currency: 'USD'})
+ };
+   }  ); 
+  
 </script>
-<div id="lp-pom-button-419">
-<a href="https://store.steampowered.com/app/1850960/The_Jackbox_Party_Pack_9/" target="_blank"></div>
+<a id="lp-pom-button-419" href="https://store.steampowered.com/app/1850960/The_Jackbox_Party_Pack_9/" target="_blank"></div>
   <span class="label"><strong>SALE</strong></span></a>
+
 </body>
 
 </html>
