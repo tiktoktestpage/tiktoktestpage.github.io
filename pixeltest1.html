@@ -29,26 +29,17 @@ document.getElementById("CompletePaymentButton").onclick = function(){
  }
 </script>
 <hr>
-  Click to Test Custom SteamClick Button </br> </br>
-<button id="lp-pom-button-418">SteamClick</button>
+<a class="lp-element lp-pom-button" id="lp-pom-button-418" href="https://store.steampowered.com/app/1850960/The_Jackbox_Party_Pack_9/" target="_self">
+  <span class="label"><strong>SALE</strong></span></a>
 <script type="text/javascript">
 document.getElementById("lp-pom-button-418").onclick = function(){
-    ttq.track('SteamClick',{  
+    ttq.track('SteamClickDesktop',{  
     quantity: 1,
-    value: 9.2,
+    value: 5,
     currency: 'USD',})
  }
 </script>
 <hr>
-  Click to Test Custom SteamClick A HREF ELEMENT </br> </br>
-
-<div id="lp-pom-button-419"><a href="https://store.steampowered.com/app/1850960/The_Jackbox_Party_Pack_9/" target="_blank">
-  <strong>SALE</strong></a></div>
-<script type="text/javascript">
-document.getElementById('lp-pom-button-419').onclick = function(){
-    alert('Hello world');
-}
-</script>
 
 </body>
 
