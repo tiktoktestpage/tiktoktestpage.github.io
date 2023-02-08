@@ -3,7 +3,7 @@
 
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<title>Test Website Home Page</title>
+<title>Test Page</title>
 <script>
 !function (w, d, t) {
   w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{},ttq._partner=ttq._partner||'Shopify';var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
@@ -16,11 +16,28 @@
 </head>
 
 <body>
-PlaceAnOrder triggering on page load test
-
+PlaceAnOrder triggering on page load test. View source to check the code.
 <hr>
 <script type="text/javascript">
-ttq.track('PlaceAnOrder', {"contents":[{"content_id":"929","content_type":"product","content_name":"Ulei de Tamaie aromaterapie, gama profesionala HEM aroma Mystic Frankincense Myrrh, imbunatatirea starii de spirit, 10 ml","quantity":2,"price":9.9000000000000003552713678800500929355621337890625},{"content_id":"1608","content_type":"product","content_name":"Sticker Stele Nobiliare, pentru \u00eendeplinirea dorin\u021belor \u0219i atragerea mentorilor, autocolant mov 5 cm","quantity":3,"price":11}],"value":"52.8","currency":"RON"});
+
+ttq.track('PlaceAnOrder', {
+        "contents": [{
+            "content_id": "929",
+            "content_type": "product",
+            "content_name": "Ulei de Tamaie aromaterapie, gama profesionala HEM aroma Mystic Frankincense Myrrh, imbunatatirea starii de spirit, 10 ml",
+            "quantity": 2,
+            "price": 9.9000000000000003552713678800500929355621337890625
+        }, {
+            "content_id": "1608",
+            "content_type": "product",
+            "content_name": "Sticker Stele Nobiliare, pentru \u00eendeplinirea dorin\u021belor \u0219i atragerea mentorilor, autocolant mov 5 cm",
+            "quantity": 3,
+            "price": 11
+        }],
+        "value": "52.8",
+        "currency": "RON"
+    });
+  
 </script>
 </body>
 
