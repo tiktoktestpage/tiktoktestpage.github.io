@@ -17,10 +17,10 @@
 
 <body>
   Click to Test CompletePayment Button </br> </br>
-<button id="CompletePaymentButton">CompletePayment</button>
+<button id="PlaceAnOrderButton">PlaceAnOrder</button>
 <script type="text/javascript">
-document.getElementById("CompletePaymentButton").onclick = function(){
-    ttq.track('CompletePayment',{  
+document.getElementById("PlaceAnOrderButton").onclick = function(){
+    ttq.track('PlaceAnOrder',{  
     content_id: '301',
     quantity: 1,
     price: 8,
@@ -28,20 +28,11 @@ document.getElementById("CompletePaymentButton").onclick = function(){
     currency: 'USD',})
  }
 </script>
-<hr>
-<a class="lp-element lp-pom-button" id="lp-pom-button-418" href="https://store.steampowered.com/app/1850960/The_Jackbox_Party_Pack_9/" target="_self">
-  <span class="label"><strong>SALE</strong></span></a>
-<script type="text/javascript">
-document.getElementById("lp-pom-button-418").onclick = function(){
-    ttq.track('SteamClickDesktop',{  
-    quantity: 1,
-    value: 5,
-    currency: 'USD',})
- }
-</script>
-<hr>
-ttq.track('PlaceAnOrder', {"contents":[{"content_id":"929","content_type":"product","content_name":"Ulei de Tamaie aromaterapie, gama profesionala HEM aroma Mystic Frankincense Myrrh, imbunatatirea starii de spirit, 10 ml","quantity":2,"price":9.9000000000000003552713678800500929355621337890625},{"content_id":"1608","content_type":"product","content_name":"Sticker Stele Nobiliare, pentru \u00eendeplinirea dorin\u021belor \u0219i atragerea mentorilor, autocolant mov 5 cm","quantity":3,"price":11}],"value":"52.8","currency":"RON"});
 
+<hr>
+<script type="text/javascript">
+ttq.track('PlaceAnOrder', {"contents":[{"content_id":"929","content_type":"product","content_name":"Ulei de Tamaie aromaterapie, gama profesionala HEM aroma Mystic Frankincense Myrrh, imbunatatirea starii de spirit, 10 ml","quantity":2,"price":9.9000000000000003552713678800500929355621337890625},{"content_id":"1608","content_type":"product","content_name":"Sticker Stele Nobiliare, pentru \u00eendeplinirea dorin\u021belor \u0219i atragerea mentorilor, autocolant mov 5 cm","quantity":3,"price":11}],"value":"52.8","currency":"RON"});
+</script>
 </body>
 
 </html>
