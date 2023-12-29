@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rich Content Display</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Rich Content Display</h2>
+    <table id="richContentTable">
+        <tr>
+            <th>ID</th>
+            <th>Rich Content</th>
+        </tr>
+    </table>
+    <script>
+        fetch('https://ads.tiktok.com/athena/api/v2/processor/order/log?order_id=1776982')
+            .then(response => response.json())
+            .then(data => {
+                const richContentArray = data.logList.filter(log => log.label === 'rich content' && log.type === 6);
+                const table = document.getElementById('richContentTable');
+
+                richContentArray.forEach(richContent => {
+                    const row = table.insertRow();
+                    const idCell = row.insertCell();
+                    const contentCell = row.insertCell();
+
+                    idCell.textContent = richContent.id;
+                    contentCell.textContent = richContent.value;
+                });
+            });
+    </script>
+</body>
+</html>
