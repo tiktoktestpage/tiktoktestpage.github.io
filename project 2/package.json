@@ -1,0 +1,11 @@
+{
+  "name": "prestige-properties",
+  "version": "1.0.0",
+  "description": "Prestige Properties website",
+  "scripts": {
+    "start": "http-server ."
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
