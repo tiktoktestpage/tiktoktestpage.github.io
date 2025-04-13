@@ -4,15 +4,23 @@
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>Test Website Home Page</title>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155118348-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<!-- Load Adobe AppMeasurement library -->
+<script src="https://assets.adobedtm.com/extensions/EPbf7b42aa08bc4f10879b1484195e80d1/AppMeasurement.min.js"></script>
 
-  gtag('config', 'UA-XXXXXXXXX-1');
+<script>
+  // Create the s object
+  var s = s_gi("yourReportSuiteID");
+
+  // Set tracking variables
+  s.pageName = document.title;
+  s.channel = "Website";
+  s.prop1 = "Homepage";
+  s.eVar1 = "Visitor";
+
+  // Send tracking call
+  s.t();
 </script>
+
 </head>
 
 <body>
@@ -122,7 +130,7 @@ This is a test page
     
     }());
 </script>-->
-<h2><a href="noon://app.noon.com/uae-en/~larocheposay/">noon larocheposay link</a></h2>
+<h2>Test adobe tracking page</h2>
 
 </body>
 
